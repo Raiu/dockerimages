@@ -20,10 +20,11 @@
                 "git.enableSmartCommit": true,
             },
             "extensions": [
-                "VisualStudioExptTeam.vscodeintellicode",
-                "Equinusocio.vsc-material-theme",
-                "Equinusocio.vsc-material-theme-icons"
-            ]
+				"VisualStudioExptTeam.vscodeintellicode",
+				"Equinusocio.vsc-material-theme",
+				"Equinusocio.vsc-material-theme-icons",
+				"eamodio.gitlens"
+			]
         }
     }
 }
