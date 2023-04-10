@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM debian:stable
 
 RUN apt-get update && apt-get install --no-install-recommends --yes \
     curl \
