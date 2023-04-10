@@ -4,6 +4,7 @@
     },
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/devcontainers/features/github-cli:1": {},
     },
     "customizations": {
         "vscode": {
@@ -18,12 +19,16 @@
                 "git.confirmSync": false,
                 "git.autofetch": true,
                 "git.enableSmartCommit": true,
+                "gitlens.currentLine.enabled": false,
+                "gitlens.codeLens.authors.enabled": false,
+                "gitlens.codeLens.recentChange.enabled": false,
             },
             "extensions": [
 				"VisualStudioExptTeam.vscodeintellicode",
 				"Equinusocio.vsc-material-theme",
 				"Equinusocio.vsc-material-theme-icons",
-				"eamodio.gitlens"
+				"eamodio.gitlens",
+				"github.vscode-github-actions"
 			]
         }
     }
