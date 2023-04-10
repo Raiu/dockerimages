@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add -y --no-cache curl sudo
+RUN apk add -y --no-cache bash curl sudo
 
 ARG USER="kody"
 

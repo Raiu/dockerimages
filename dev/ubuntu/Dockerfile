@@ -1,9 +1,10 @@
-FROM debian:stable
+FROM ubuntu:22.04
 
-RUN apt-get update && apt-get install --no-install-recommends --yes \
+RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get install --no-install-recommends --yes \
+    apt-utils \
+    ca-certificates \
     curl \
-    sudo \
-    ca-certificates
+    sudo
 
 ARG USER="kody"
 
