@@ -1,4 +1,4 @@
-name: dev-ubuntu-build_push.yml
+name: dev-ubuntu-build_push
 
 on:
   push:

@@ -1,4 +1,4 @@
-name: bdev-debian-build_push
+name: dev-debian-build_push
 
 on:
   push:
