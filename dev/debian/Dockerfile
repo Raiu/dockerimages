@@ -1,9 +1,10 @@
-FROM debian:stable
+FROM debian:bullseye
 
 ARG DEBIAN_FRONTEND=noninteractive
 
+COPY sources.list /etc/apt/sources.list
 RUN apt-get update && apt-get upgrade --yes && apt-get install --no-install-recommends --yes \
-    apt-utils ca-certificates ssh sudo curl
+    dialog readline-common apt-utils ca-certificates ssh sudo curl
 
 ARG USER="kody"
 RUN useradd --create-home --shell /bin/bash ${USER}

@@ -1,0 +1,10 @@
+deb http://ftp.acc.umu.se/ubuntu jammy main restricted universe multiverse
+deb http://ftp.acc.umu.se/ubuntu jammy-updates main restricted universe multiverse
+deb http://ftp.acc.umu.se/ubuntu jammy-backports main restricted universe multiverse
+deb http://ftp.acc.umu.se/ubuntu jammy-security main restricted universe multiverse
+
+# Uncomment lines below to enable source packages
+#deb-src http://ftp.acc.umu.se/ubuntu jammy main restricted universe multiverse
+#deb-src http://ftp.acc.umu.se/ubuntu jammy-updates main restricted universe multiverse
+#deb-src http://ftp.acc.umu.se/ubuntu jammy-backports main restricted universe multiverse
+#deb-src http://ftp.acc.umu.se/ubuntu jammy-security main restricted universe multiverse
