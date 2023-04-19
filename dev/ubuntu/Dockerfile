@@ -16,7 +16,7 @@ ENV USER_ID=1000
 ENV GROUP=${USER}
 ENV GROUP_ID=${USER_ID}
 
-RUN addgroup -g ${GROUP_ID} ${GROUP} && \
+RUN addgroup --gid ${GROUP_ID} ${GROUP} && \
     adduser --shell /bin/bash --disabled-password \
     --uid $USER_ID --ingroup ${GROUP} ${USER}
 
