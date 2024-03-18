@@ -1,6 +1,6 @@
-FROM alpine:3.17
+FROM alpine:3.19
 
-RUN apk add --no-cache dropbear shadow sudo bash curl
+RUN apk add --no-cache dropbear shadow sudo bash curl git wget
 
 ARG BUILD_USER="kody"
 ARG BUILD_USER_ID=1000

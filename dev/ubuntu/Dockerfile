@@ -4,7 +4,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 COPY sources.list /etc/apt/sources.list
 RUN apt-get update && apt-get upgrade --yes && apt-get install --no-install-recommends --yes \
-    dialog readline-common apt-utils ca-certificates ssh sudo curl
+    dialog readline-common apt-utils ca-certificates ssh sudo curl git wget
 
 ARG BUILD_USER="kody"
 ARG BUILD_USER_ID=1000
