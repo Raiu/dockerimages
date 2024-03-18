@@ -23,9 +23,9 @@ RUN addgroup --gid ${GROUP_ID} ${GROUP} && \
 ARG NOPASSWD=true
 RUN if [ "${NOPASSWD}" = "true" ] ; then echo "${USER} ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers ; fi
 
-RUN git config --global --add safe.directory '*'
-
 USER ${USER}
+
+RUN git config --global --add safe.directory '*'
 
 ARG APP="/home/${USER}"
 WORKDIR ${APP}
