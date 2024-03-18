@@ -8,7 +8,10 @@ alpine 3.19
 ## dev
 base images for development environments
 nopasswd enabled
+git safe.directory disabled
 
 docker run -it -v "$(pwd)":/home/kody/"$(pwd)" raiu/dev-ubuntu /bin/bash
+
 docker run -it -v "$(pwd)":/home/kody/"$(pwd)" raiu/dev-debian /bin/bash
+
 docker run -it -v "$(pwd)":/home/kody/"$(pwd)" raiu/dev-alpine /bin/bash
